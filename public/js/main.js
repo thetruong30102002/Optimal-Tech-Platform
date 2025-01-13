@@ -286,4 +286,30 @@ jQuery(document).ready(function ($) {
       },
     });
   });
+
+  
+  
+});
+
+$(document).ready(function() {
+  // Kiểm tra nếu authToken tồn tại trong localStorage hoặc cookie
+  var authToken = localStorage.getItem('authToken');
+
+  if (authToken) {
+    
+    // Nếu có authToken, thay đổi nút thành Đăng Xuất
+    $('#authButton').text('Đăng Xuất');
+    $('#authButton').attr('href', '/logout'); // Đường dẫn tới trang đăng xuất
+
+    // Xử lý sự kiện đăng xuất khi nhấn nút
+    $('#authButton').click(function(event) {
+      event.preventDefault(); // Ngừng chuyển hướng mặc định
+      localStorage.removeItem('authToken'); // Xóa authToken khỏi localStorage
+      window.location.href = '/'; // Chuyển hướng về trang chủ
+    });
+  } else {
+    // Nếu không có authToken, hiển thị nút Đăng Nhập
+    $('#authButton').text('Đăng Nhập');
+    $('#authButton').attr('href', '/login');
+  }
 });

@@ -64,11 +64,11 @@
             <li class="menu-active"><a href="#body">Trang Chủ</a></li>
             <li><a href="#about">Về Chúng Tôi</a></li>
             <li><a href="#services">Dịch Vụ</a></li>
-            <li><a href="#portfolio">Dự Án</a></li>
+            <!-- <li><a href="#portfolio">Dự Án</a></li> -->
             <li><a href="#contact">Liên Hệ</a></li>
             <li id="authSection" class="signin-button">
               <!-- Mặc định hiển thị nút Đăng Nhập -->
-              <a href="/login" class="btn-signin scrollto px-4">Đăng Nhập</a>
+              <a href="/login" class="btn-signin scrollto px-4" id="authButton">Đăng Nhập</a>
             </li>
           </ul>
         </nav>
@@ -84,9 +84,9 @@
       <div class="intro-content">
         <h2>Biến <span>ý tưởng của bạn</span><br />thành hiện thực!</h2>
         <div>
-          <a href="#about" class="btn-get-started scrollto">Bắt đầu</a>
-          <a href="#portfolio" class="btn-projects scrollto"
-            >Dự án của chúng tôi</a
+          <a href="/login" class="btn-get-started scrollto">Bắt đầu</a>
+          <a href="#about" class="btn-projects scrollto"
+            >Về chúng tôi</a
           >
         </div>
       </div>
@@ -192,13 +192,64 @@
               </p>
             </div>
           </div>
-    
+          
           <div class="col-lg-6">
             <div class="box wow fadeInRight" data-wow-delay="0.2s">
-              <div class="icon"><i class="fa fa-search"></i></div>
-              <h4 class="title"><a href="">Tối Ưu SEO Website</a></h4>
+              <div class="icon"><i class="fa fa-server"></i></div>
+              <h4 class="title"><a href="">Tối Ưu Hạ Tầng</a></h4>
               <p class="description">
-                Chúng tôi áp dụng các chiến lược SEO hiện đại để nâng cao thứ hạng của website trên các công cụ tìm kiếm, giúp bạn tiếp cận khách hàng tiềm năng một cách hiệu quả hơn.
+                Chúng tôi cung cấp các giải pháp tối ưu hóa hạ tầng công nghệ, đảm bảo hệ thống vận hành ổn định, nhanh chóng và sẵn sàng đáp ứng nhu cầu phát triển của doanh nghiệp bạn.
+              </p>
+            </div>
+          </div>
+    
+          <!-- Dịch vụ mới -->
+          <div class="col-lg-6">
+            <div class="box wow fadeInLeft" data-wow-delay="0.3s">
+              <div class="icon"><i class="fa fa-database"></i></div>
+              <h4 class="title"><a href="">Tối Ưu Hóa Cơ Sở Dữ Liệu</a></h4>
+              <p class="description">
+                Chúng tôi cải thiện tốc độ truy xuất dữ liệu, tối ưu hóa các bảng và truy vấn, đảm bảo cơ sở dữ liệu của bạn luôn hoạt động hiệu quả và ổn định.
+              </p>
+            </div>
+          </div>
+    
+          <div class="col-lg-6">
+            <div class="box wow fadeInRight" data-wow-delay="0.3s">
+              <div class="icon"><i class="fa fa-image"></i></div>
+              <h4 class="title"><a href="">Tối Ưu Hóa Hình Ảnh</a></h4>
+              <p class="description">
+                Giảm kích thước và tối ưu hóa hình ảnh trên website của bạn mà không làm giảm chất lượng, giúp tăng tốc độ tải trang và tiết kiệm băng thông.
+              </p>
+            </div>
+          </div>
+    
+          <div class="col-lg-6">
+            <div class="box wow fadeInLeft" data-wow-delay="0.4s">
+              <div class="icon"><i class="fa fa-code"></i></div>
+              <h4 class="title"><a href="">Tối Ưu Hóa Code</a></h4>
+              <p class="description">
+                Xóa bỏ các đoạn mã dư thừa, cải thiện cấu trúc code và tối ưu hóa các đoạn script để tăng hiệu suất và giảm thời gian tải trang.
+              </p>
+            </div>
+          </div>
+    
+          <div class="col-lg-6">
+            <div class="box wow fadeInRight" data-wow-delay="0.4s">
+              <div class="icon"><i class="fa fa-check"></i></div>
+              <h4 class="title"><a href="">Kiểm Tra Hiệu Suất Trang</a></h4>
+              <p class="description">
+                Đánh giá hiệu suất tổng thể của website, xác định các vấn đề gây chậm và cung cấp giải pháp khắc phục để cải thiện trải nghiệm người dùng.
+              </p>
+            </div>
+          </div>
+    
+          <div class="col-lg-6">
+            <div class="box wow fadeInLeft" data-wow-delay="0.5s">
+              <div class="icon"><i class="fa fa-server"></i></div>
+              <h4 class="title"><a href="">Tối Ưu Hóa Máy Chủ</a></h4>
+              <p class="description">
+                Tối ưu hóa cấu hình và hiệu suất máy chủ để đảm bảo tốc độ, độ ổn định và khả năng mở rộng cho website của bạn.
               </p>
             </div>
           </div>
@@ -206,12 +257,13 @@
       </div>
     </section>
     
+    
       <!-- #services -->
 
       <!--==========================
       Clients Section
     ============================-->
-    <section id="clients" class="wow fadeInUp">
+    <!-- <section id="clients" class="wow fadeInUp">
       <div class="container">
         <div class="section-header">
           <h2>Khách Hàng</h2>
@@ -231,13 +283,13 @@
           <img src="img/clients/client-8.png" alt="Khách hàng 8" />
         </div>
       </div>
-    </section>    
+    </section>     -->
       <!-- #clients -->
 
       <!--==========================
       Our Portfolio Section
     ============================-->
-      <section id="portfolio" class="wow fadeInUp">
+      <!-- <section id="portfolio" class="wow fadeInUp">
         <div class="container">
           <div class="section-header">
             <h2>Dự Án Của Chúng Tôi</h2>
@@ -356,7 +408,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- #portfolio -->
 
@@ -482,35 +534,24 @@
           <div class="section-header">
             <h2>Liên Hệ Với Chúng Tôi</h2>
             <p>
-              Sed tamen tempor magna labore dolore dolor sint tempor duis magna
-              elit veniam aliqua esse amet veniam enim export quid quid veniam
-              aliqua eram noster malis nulla duis fugiat culpa esse aute nulla
-              ipsum velit export irure minim illum fore
+              Chúng tôi luôn sẵn sàng hỗ trợ bạn. Dưới đây là thông tin liên hệ chi tiết của công ty.
             </p>
           </div>
 
           <div class="row contact-info">
-            <div class="col-md-4">
+            <div class="col-md-6">
               <div class="contact-address">
                 <i class="ion-ios-location-outline"></i>
                 <h3>Địa Chỉ</h3>
-                <address>A108 Adam Street, NY 535022, USA</address>
+                <address>Tầng 6 Tòa nhà Hội Phụ Nữ Số 7 Tôn Thất Thuyết, Phường Dịch Vọng Hậu, Quận Cầu Giấy,  Thành phố Hà Nội, Việt Nam</address>
               </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-6">
               <div class="contact-phone">
                 <i class="ion-ios-telephone-outline"></i>
                 <h3>Số Điện Thoại</h3>
-                <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="contact-email">
-                <i class="ion-ios-email-outline"></i>
-                <h3>Email</h3>
-                <p><a href="mailto:info@example.com">info@example.com</a></p>
+                <p><a href="tel:+155895548855">+84 246 670 0800</a></p>
               </div>
             </div>
           </div>
@@ -585,22 +626,54 @@
     <!--==========================
     Footer
   ============================-->
-    <footer id="footer">
-      <div class="container">
-        <div class="copyright">
-          &copy; Copyright <strong>Reveal</strong>. All Rights Reserved
+  <footer id="footer" class="bg-dark text-light pt-5 pb-4">
+    <div class="container">
+      <!-- Hàng 2: Liên hệ và Kết nối với chúng tôi -->
+      <div class="row">
+        <!-- Liên hệ -->
+        <div class="col-md-8">
+          <h5 class="text-uppercase mb-3">Liên hệ</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <i class="fa fa-map-marker-alt"></i>
+              <strong> Địa chỉ:</strong><br>
+              Tầng 6, Tòa nhà Hội Phụ Nữ, Số 7 Tôn Thất Thuyết, Phường Dịch Vọng Hậu, Quận Cầu Giấy, Hà Nội
+            </li>
+            <li class="mb-2">
+              <i class="fa fa-envelope"></i>
+              <strong> Email:</strong>
+              <a href="mailto:optimaltechplatform@gmail.com" class="text-light"> optimaltechplatform@gmail.com</a>
+            </li>
+            <li>
+              <i class="fa fa-phone"></i>
+              <strong> Hotline:</strong> +84 246 670 0800
+            </li>
+          </ul>
         </div>
-        <div class="credits">
-          <!--
-          All the links in the footer should remain intact.
-          You can delete the links only if you purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Reveal
-        -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        <!-- Kết nối với chúng tôi -->
+        <div class="col-md-4 d-flex flex-column align-items-center">
+          <h5 class="text-uppercase mb-3">Kết nối với chúng tôi</h5>
+          <div class="d-flex justify-content-center">
+            <a href="#" class="btn btn-outline-light btn-sm mx-2"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="btn btn-outline-light btn-sm mx-2"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="btn btn-outline-light btn-sm mx-2"><i class="fa fa-instagram"></i></a>
+            <a href="#" class="btn btn-outline-light btn-sm mx-2"><i class="fa fa-linkedin"></i></a>
+          </div>
         </div>
       </div>
-    </footer>
+      <!-- Hàng 3: Bản quyền -->
+      <div class="row mt-4">
+        <div class="col text-center">
+          <hr class="border-light">
+          <p class="mb-0">
+            &copy; 2025 <strong>M07 Company Limited</strong>. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  
     <!-- #footer -->
 
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
